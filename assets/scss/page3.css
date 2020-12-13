@@ -152,7 +152,7 @@ nav .sign-up {
 .header .header-images {
   position: relative;
   top: -650px;
-  left: 8.9%;
+  left: 27.9%;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[2];
@@ -468,7 +468,7 @@ nav .sign-up {
   display: inline-block;
   text-align: right;
   margin-left: 40%;
-  margin-right: 5%;
+  margin-right: 2%;
 }
 
 .footer .container .content button {
