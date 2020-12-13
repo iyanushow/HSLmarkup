@@ -1,0 +1,525 @@
+// font faces
+@font-face {
+    font-family: 'gilroyextrabold';
+    src: url('../fonts/Gilroy-FREE/gilroy-extrabold-webfont.woff2') format('woff2'),
+         url('../fonts/Gilroy-FREE/Gilroy-ExtraBold.otf') format('otf'),
+         url('../fonts/Gilroy-FREE/gilroy-extrabold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'gilroylight';
+    src: url('../fonts/Gilroy-FREE/gilroy-light-webfont.woff2') format('woff2'),
+         url('../fonts/Gilroy-FREE/Gilroy-Light.otf') format('otf'),
+         url('../fonts/Gilroy-FREE/gilroy-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'yellowtail';
+    src: url('../fonts/Gilroy-FREE/Yellowtail-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* variables */
+$main-color-1:#000000;
+$main-color-2: #ffffff;
+$font-family-main: 'gilroyextrabold', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+$font-family-sub: 'gilroylight', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+
+/* base styles */
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body {
+    font-size: 16;
+    margin: auto;
+    max-width: 1440px;
+}
+
+// navigation
+
+nav{
+  height: 10vh;
+  background: transparent;
+  position: absolute;
+  width: 100%;
+    .brand{
+        text-align: left;
+        vertical-align: middle;  
+        position: relative;
+        left: 100px;
+        top: 60px;
+        color: $main-color-2;
+        font-family: $font-family-sub;
+        font-size: 20px;
+        line-height: 23px;
+    }
+    .nav-links{
+        display: inline-flex;
+        list-style-type: none;
+        max-width: 30%;
+        font-family: $font-family-sub;
+        justify-content: space-around;
+        align-items: center;
+        margin: auto 20% auto 30%;
+        li{
+            padding: 0 20px;
+            a{
+                    text-decoration: none;
+                    font-size: 16px;
+                    line-height: 150%;
+                    color: $main-color-2;
+
+                    
+            }
+        }
+    }
+    .sign-up{
+        margin: 0;
+        padding: 0;
+        text-decoration: none;
+        width: 10rem;
+        height: 3rem;
+        background: #000;
+        color: $main-color-2;
+        cursor: pointer;
+        font-family: $font-family-sub;
+        font-size: 18px;
+        line-height: 150%;
+        text-align: center;
+        
+    }
+}
+
+
+/* headers */
+.header{
+    max-height: 53rem;
+    .header-one {
+        background: $main-color-1;
+        color: $main-color-2;
+        width: 70rem;
+        height: 53rem;
+        left: 0px;
+        top: 0px;
+        display: grid;
+        grid-template-columns: 50% 50% ;
+        .content{
+            position: relative;
+            left: 98px;
+            top: 220px;
+            height: 500px;
+            h1 {
+            width: 478px;
+            height: 252px;
+            font-family:$font-family-sub;
+            font-size: 70px;
+            line-height: 120%;
+            color: #FFFFFF;
+            }
+            p {
+            max-width: 420px;
+            height: 60px;
+            font-family: $font-family-sub;
+            font-size: 20px;
+            line-height: 30px;
+            color: #BABABA;
+            margin-top: 30px;
+            }
+            button{
+                width: 10rem;
+                height: 3rem;
+                background: #FFFFFF;
+                cursor: pointer;
+                margin-top: 50px;
+                &:hover{
+                   background: #d8d6d6;
+               }
+
+            }
+        }
+      
+    }
+    .header-images{
+        position: relative;
+        top: -650px;
+        left: 8.9%;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        img:nth-of-type(1), img:nth-of-type(3){
+            justify-self: end;
+        }
+    }
+}
+
+// who we are 
+.define-us{
+    margin: 7rem 2rem;
+    padding: 1rem 7rem;
+    h1{
+        font-family: $font-family-main;
+        font-weight: 600;
+        font-size: 50px;
+        line-height: 120%;
+        color: $main-color-1;
+
+    }
+    article{
+        display: grid;
+        gap:10rem;
+        grid-template-columns: repeat(2, 1fr);
+        font-weight: 100;
+        text-align: justify;
+        p{
+          font-family: $font-family-sub;
+            font-size: 20px;
+            line-height: 32px;
+            color: #404040;
+
+        }
+        blockquote{
+            font-family: $font-family-sub;
+            font-size: 20px;
+            line-height: 32px;
+            color: #404040;
+            max-width: 386px;
+            hr{
+                width: 175px;
+                height: 4px;
+                margin-bottom: 1rem;
+                background-color: #000;
+
+            }
+            .quote{
+                font-family: Century;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 120px;
+            }
+            cite{
+                font-family: "yellowtail", 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            }
+
+        }
+        blockquote:before {
+            display: block;
+            padding-left: 10px;
+            content: "\201C";
+            font-size: 100px;
+            position: absolute;
+            left: -20px;
+            top: -20px;
+            color: rgb(60, 132, 156);
+        }
+    }
+}
+
+// image slider
+.image-slider{
+    margin: 5rem auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 40px;
+}
+/* services*/
+.services{
+    h1{
+        font-family: $font-family-main;
+        font-size: 60px;
+        line-height: 75px;
+        letter-spacing: 0em;
+        text-align: left;
+        position: relative;
+        left: 190px;
+        top: 75px ;
+        color: $main-color-1;
+        span{
+            color: $main-color-2;
+        }
+
+    }
+    .main-services{
+       width: 80%;
+       height: 542px;
+       background: $main-color-1;
+       margin-left: 20%;
+       color: $main-color-2;
+       display: grid;
+       grid-template-columns: 45% 45%;
+       align-items: center;
+       justify-content: center;
+       
+       div{
+           padding: 7rem 8rem 1rem;
+           justify-content: center;
+           text-align: center;
+           font-family: $font-family-sub;
+           h5{
+               font-size: 1.2rem;
+               line-height: 30px;
+               max-width: 430px;
+               font-weight: bold;
+               margin-bottom: 5px;
+           }
+           p{
+               
+               font-size: 1rem;
+               max-width:320px ;
+               font-weight: 100;
+               line-height: 143.64%;
+               margin-bottom: 3rem;
+           }
+           button{
+               width: 149px;
+               height: 50px;
+               background: $main-color-2;
+               &:hover{
+                   background: #d8d6d6;
+               }
+           }
+       }
+    }
+}
+
+// tagline
+.tagline{
+    text-align: center;
+    margin: 8rem auto;
+}
+
+// events
+.events{
+    text-align: center;
+    h2{
+        font-family: $font-family-main;
+        font-size: 48px;
+        line-height: 120%;
+        color: $main-color-1;
+
+    }
+    p{
+        font-family: $font-family-sub;
+        font-size: 1rem;
+        line-height: 162%;
+        font-weight: 100;
+        max-width: 751px;
+        margin: auto;
+    }
+    .cards{
+        margin: 5rem 4.5%;
+        display: grid;
+        grid-template-columns: repeat(4,17%);
+        gap: 5%;
+        justify-content: center;
+        .card{
+            padding: 1.5rem 1.5rem 3rem ;
+            text-align: justify;
+            border: none;
+            box-shadow: 5px 5px 15px #29272733;
+            max-width: 261px;
+            img{
+                margin: 1rem;
+            }
+            h3{
+                font-family: $font-family-sub;
+                font-size: 30px;
+                line-height: 32px;
+                max-width: 208px;
+                margin-bottom: 10px;
+            }
+            p{
+                font-family: $font-family-sub;
+                font-size: 14px;
+                line-height: 20px;
+                max-width: 190px;
+                color: rgba(0, 0, 0, 0.8);
+                margin-left: 0;
+                
+            }
+            &:active, &:hover{
+                outline: 2px solid black;
+                position: relative;
+                bottom: 5px;
+            }
+        }
+    }
+}
+
+// meet the team
+.the-team{
+    background: $main-color-1;
+    color:$main-color-2;
+    display: grid;
+    padding: 8rem 0 5rem 5rem;
+    grid-template-columns: 30% 50%;
+    justify-content: center;
+    gap: 10%;
+    div.text{
+        font-family: $font-family-sub;
+        h5{
+            
+            font-size: 24px;
+            line-height: 121.64%;
+            margin-bottom: 20px;
+        }
+        h3{
+            
+            font-size: 60px;
+            line-height: 117.5%;
+            margin-bottom: 20px;
+        }
+        p{
+            font-size:1rem;
+            line-height: 147.1%;
+        }
+    }
+    div.images{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 5%;
+        img {
+            max-width: 354px;
+            max-height: 471px;
+        }
+    }
+    .fonts{
+        text-align: center;
+        .fas{
+            margin: auto 10px;
+        }
+    }
+}
+
+// footer
+.footer{
+    margin-top: 7rem;
+    .container{
+        max-width: 75%;
+        margin: auto;
+        
+        .content{
+           font-family: $font-family-sub;
+            h4{
+                font-family: Almarai;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 20px;
+                line-height: 121.64%;
+                display: inline-block;
+            }
+            h5{
+                
+                font-size: 22px;
+                line-height: 26px;
+                letter-spacing: -0.3px;
+                display: inline-block;
+                text-align: right;
+                margin-left: 40%;
+                margin-right: 5%;
+            }
+            button{
+                background: #000000;
+                border-radius: 5px;
+                font-size: 20px;
+                line-height: 20px;
+                padding: 0.5rem;
+                color: $main-color-2;
+                margin-right: 0;
+                height: 50px;
+                width: 175px;
+                border-radius: 5px;
+                &:hover{
+                   background: #1f1e1e;
+               }
+
+                
+            }
+
+        }
+        hr{
+             margin: 3rem auto;
+        }
+        .other{
+            padding: auto;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            justify-content: center;
+            .newsletter{
+                grid-column:1/2;
+                justify-items: center;
+                font-family: $font-family-sub;
+                h4{
+                    font-size: 24px;
+                    line-height: 28px;
+                    letter-spacing: -0.3px;
+                    max-width: 175px;
+                    margin-bottom: 50px;
+                }
+                input{
+                    border: none;
+                    border-bottom: 1px solid rgb(83, 79, 79);
+                    opacity: 0.8;
+                    font-family: DM Sans;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 15px;
+                    line-height: 20px;
+                }
+                i{
+                    position: relative;
+                    left: -30px;
+                    top: 4px;
+                }
+            }
+            .services{
+                grid-column:2/4;
+                display: grid;
+                grid-template-columns: repeat(3,1fr);
+                gap: auto;
+                justify-content: space-around;
+                font-family: $font-family-sub;
+                font-weight: bolder;
+                li{
+                    list-style-type: none;
+                    margin: 20px auto;
+                    
+                    
+                    a{
+                        text-decoration: none;
+                        color: $main-color-1;
+                    }
+                }
+            }
+        }
+        .socials{
+            p {
+                font-family: $font-family-sub;
+                font-weight: bolder;
+                display: inline-block;
+                margin: 20px 50px 0;
+            }
+            .social-links{
+                margin-left: 30%;
+                i{
+                    margin: auto 20px auto 0;
+                }
+                
+            }
+            a{
+                    margin-right: 5px;
+                    color: red;
+                    text-decoration: none;
+            }
+        }
+    }
+    
+}

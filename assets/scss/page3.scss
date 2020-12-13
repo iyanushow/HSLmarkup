@@ -1,0 +1,50 @@
+@import "./index.scss";
+
+
+.header{
+    max-height: 53rem;
+    .header-one{
+        width: 100%;
+    }
+    .header-images{
+        max-width:778px;
+        position: relative;
+        top: -850px;
+        left: 46%;
+        right: 0;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(9,100px);
+        gap: 10px;
+        row-gap: 0;
+        overflow: hidden;
+        
+        
+       .one{
+            grid-column: 2/3;
+            grid-row: 1/ span 5;
+            
+       }
+       .two{
+        grid-column: 1/2;
+        grid-row: 2/span 4;
+       }
+       .three{
+        grid-column: 1/2;
+        grid-row: 7;
+       }
+       .four{
+        grid-column: 1/2;
+        grid-row: 1;
+        height: 90px;
+        width: 384px;
+        opacity: 0.5;
+       }
+       .five{
+        grid-column: 2/3;
+        grid-row: 6;
+        height: 350px;
+        width: 384px;
+       }
+    }
+}

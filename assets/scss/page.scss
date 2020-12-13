@@ -1,0 +1,74 @@
+@import "./index.scss";
+
+nav{
+    .nav-links{
+        margin: auto 10% auto 30%;
+        li{
+            a{
+                color: $main-color-1;
+                font-weight: bolder;
+            }
+        }
+    }
+}
+.header{
+    
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.738594) 68.75%, rgba(0, 0, 0, 0.87) 100%, #000000 100%), url("../images/mainheader.jpg");
+    .header-one{
+        
+        background-color: transparent;
+        width: 100%;
+         .content{
+            position: relative;
+            left: 60%;
+            top: 35%;
+            height: 500px;
+            
+            h1 {
+            width: 904px;
+            height: auto;
+            font-family:$font-family-main;
+            font-size: 90px;
+            line-height: 120%;
+            color: #FFFFFF;
+            }
+            p {
+            max-width: 420px;
+            height: 60px;
+            font-family: $font-family-sub;
+            font-size: 20px;
+            line-height: 30px;
+            color: #BABABA;
+            text-align: center;
+            margin: 50px auto;
+            }
+        }
+    }
+    
+}
+.define-us{
+    margin: 7rem 2rem 5rem;
+    padding: 1rem 7rem;
+    h1{
+        font-family: $font-family-main;
+        font-weight: 600;
+        font-size: 50px;
+        line-height: 120%;
+        color: $main-color-1;
+        text-align: center;
+
+    }
+    p{
+        font-family: $font-family-sub;
+        text-align: center;
+        margin: 20px auto;
+        max-width: 751px;
+        font-size: 20px;
+        line-height: 162%;
+    }
+    img{
+        text-align: center;
+        display: block;
+        margin: 50px auto;
+    }
+}
